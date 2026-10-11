@@ -2,9 +2,9 @@
 name: DeepGrid Silicon Portfolio
 description: The company's public look (deepgridsemi.com) carrying the evidence catalogue. Black frames and photographic heroes, navy reading bands, one brand blue, Inter headings over Source Sans body.
 colors:
-  brand-blue: "#0863a1"
-  brand-blue-hover: "#0a75bd"
-  blue-on-dark: "#61a6fa"
+  brand-blue: "#0e4c7a"
+  brand-blue-hover: "#14598c"
+  blue-on-dark: "#7fb0e6"
   hero-cyan: "#4de2ff"
   black: "#0a0a0a"
   night: "#111827"
@@ -127,9 +127,9 @@ A visitor arriving from deepgridsemi.com should recognise the same company: blac
 Restrained: navy neutrals plus one blue.
 
 ### Primary
-- **Brand Blue** (`#0863a1`): primary button fills (white text, 6.6:1), selected filters, the capability band.
-- **Blue Hover** (`#0a75bd`).
-- **Light Blue** (`#61a6fa`): links, focus rings and accent marks on navy (7.3:1 on Navy Page).
+- **Brand Blue** (`#0e4c7a`): the fill of the one primary button per view (white text, 9:1). Deepened from the reference's `#0863a1` on 2026-10-11 (owner: buttons "too bright" across every section).
+- **Blue Hover** (`#14598c`).
+- **Light Blue** (`#7fb0e6`): links, focus rings, selected-state edges and accent marks on navy (8:1 on Page). Softened from `#61a6fa` on 2026-10-11.
 - **Hero Cyan** (`#4de2ff`): the home hero headline only.
 
 ### Neutral: two grounds and one card (owner, 2026-10-10: backgrounds must gel)
@@ -148,7 +148,9 @@ Retired after measurement: the live home used seven grounds from two families (n
 
 **The Re-alias Rule.** Legacy names (`--copper`, `--ink`, `--v6-*`, `--v11-*`) are re-declared inside every band, because a custom property resolves where it is declared.
 
-**The One Blue Rule.** Blue marks what can be acted on. Headings are white, never blue.
+**The One Blue Rule.** Blue marks what can be acted on. Headings and figures (39 cycles, 198 days, stat rows) are white, never blue.
+
+**The One Fill Rule.** One filled button per view: the header's "Discuss your application", the hero's primary action, the close's "Discuss a system" and a part page's "Discuss this part". Selected filters and workbench toggles take the Card ground with a Light Blue edge; secondary actions ("Inject illustrative fault", the Blueprint PDF) are outline buttons; repeated tile actions ("View details") are text links.
 
 **The Opaque Ground Rule.** A card on a coloured band takes the opaque colour it renders as (`#1b6fa8` on Brand Blue), so alpha-blind contrast checks measure the real ground.
 
@@ -185,7 +187,7 @@ Retired after measurement: the live home used seven grounds from two families (n
 - **Proof strip.** Directly under the home hero: four cells on black with hairline dividers. Each cell is a figure (Inter 300), a short label paraphrasing the claim, and its maturity plus source title, linked to the source document. The three engineering figures come from `app/claims.ts` (fault-39, fmax-lockstep, node-130) and are never typed by hand; the fourth is the 12-architecture portfolio count. Two columns below 900 px.
 - **One scroll act.** The home fault path is the page's single pinned act: `ScrollAct` (`app/scroll-act.tsx`) mounts the vendored scrollcraft engine (`public/engine/scrollcraft`, unedited, MIT). The span is 4.5 viewport heights, about 0.7 per fault step, which is reading pace. It pins only at 1100 px and wider with motion allowed; on phones and under reduced motion the stage stays click-driven. The stage declares `data-sc-verify-state` for scroll-craft's harness. Never add a second scroll device to a page.
 - **Section heads, every page.** Title left, intro paragraph right, stacked below 760px. Home uses the same grammar as the inner routes. The reference centres its section heads; this site does not (owner, 2026-10-10), so the hero, every section, the close and the footer share one left edge.
-- **Band order on home.** Black hero, black application strip, then navy bands (product finder, system section, films), the Brand Blue capability band, navy fault-path stage and diagnostics, navy grid-paper stages, decision gates, the Navy Close band, the next-decision block, footer navy.
+- **Band order on home (story pack, 2026-10-11).** Hero, proof strip, application strip, then the fault-path act (the peak, third), diagnostics, product finder, system section, grid-paper stages, one close, footer. The shared-capability and growth-gates sections live on `/company` only. "Where to go next" stays after the close, because `scripts/check-crossrefs.mjs` requires every route to link two or more siblings. Plan: `design-plans/2026-10-11-story-arc-and-figures.md`.
 - **Engineering pages.** One `page-wrap` column (max 1600px, 8% gutter, 5% below 650px).
 - Tap targets are at least 24px; controls that take a press are 44px.
 
@@ -211,7 +213,7 @@ Flat at rest: cards are lifted by a lighter navy surface and a hairline, not a s
 - **Outline button (on dark):** 1.5px white border, 6px, white text, hover `rgb(255 255 255 / .08)`.
 - **Text link:** blue, underline offset 4px; a lucide `ArrowUpRight` (14px, `aria-hidden`) only on outbound and primary links.
 - **Product row (home finder):** a hairline-ruled index row (no card, no radius, no shadow); hover takes the Navy Card ground. It reads as a datasheet index, as on the reference sites.
-- **Filter:** Navy Card with a border; `aria-pressed` selected state is Brand Blue with white text.
+- **Filter:** Navy Card with a border; the `aria-pressed` selected state is a lighter card (`#1a2740`) with a Light Blue border and white text, never a fill.
 - **Fault chain:** Navy Card rows; reached rows take Navy Surface and white text; the current row takes a Light Blue border and a 14% blue tint.
 - **Header:** black at 95% with blur, white 500 links.
 - **Footer:** navy, white links that turn Blue on Dark on hover; the tagline is a paragraph (not a heading), 1.75rem, hidden below 650px.

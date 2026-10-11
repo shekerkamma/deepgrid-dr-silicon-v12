@@ -12,7 +12,7 @@
   --font-display:'Inter Variable',system-ui,-apple-system,'Segoe UI',sans-serif;
   --font-text:'Source Sans 3 Variable','Source Sans 3',system-ui,-apple-system,'Segoe UI',sans-serif;
   --serif:var(--font-display);--v11-display:var(--font-display);
-  --dgs-blue:#0863a1;--dgs-blue-hover:#0a75bd;--dgs-blue-dark:#61a6fa;--dgs-cyan:#4de2ff;
+  --dgs-blue:#0e4c7a;--dgs-blue-hover:#14598c;--dgs-blue-dark:#7fb0e6;--dgs-cyan:#4de2ff;
   --dgs-navy:#232c48;--dgs-night:#111827;--dgs-black:#0a0a0a;
   --dgs-shadow:none;--dgs-shadow-hover:0 12px 28px rgb(0 0 0 / .35);
   --sc-radius-sm:6px;--sc-radius-md:8px;--sc-radius-lg:12px;
@@ -22,14 +22,14 @@
 :root,.dgs-light{
   --t-bg:#0b1220;--t-surface:#0f172a;--t-surface-2:#111827;--t-muted:#1e293b;--t-plate:#162033;
   --t-fg:#f8fafc;--t-fg-2:#cbd5e1;--t-line:#1e293b;--t-border:#2a3854;
-  --t-accent:#61a6fa;--t-on-accent:#0b1220;--t-ok:#34d399;--t-safe:#2dd4bf;--t-danger:#fca5a5;
+  --t-accent:#7fb0e6;--t-on-accent:#0b1220;--t-ok:#34d399;--t-safe:#2dd4bf;--t-danger:#fca5a5;
   --t-card:#162033;
 }
 /* Dark band: frames and technical stages. */
 .dgs-dark{
   --t-bg:#0a0a0a;--t-surface:#111827;--t-surface-2:#1f2937;--t-muted:#374151;--t-plate:#f9fafb;
   --t-fg:#ffffff;--t-fg-2:#d1d5db;--t-line:#1f2937;--t-border:#374151;
-  --t-accent:#61a6fa;--t-on-accent:#0a0a0a;--t-ok:#34d399;--t-safe:#2dd4bf;--t-danger:#fda4a4;
+  --t-accent:#7fb0e6;--t-on-accent:#0a0a0a;--t-ok:#34d399;--t-safe:#2dd4bf;--t-danger:#fda4a4;
   --t-card:#111827;
 }
 /* Aliases, re-declared in every band. */
@@ -55,7 +55,7 @@ html .page-wrap>.section-head:first-child,.cp-band,.pp-hero,.breadcrumbs,.techno
 .v6-stage,.die-stage,.dr-stage,.evidence-clip,.pt-tile video,.dgs-dark{
   --t-bg:#0a0a0a;--t-surface:#111827;--t-surface-2:#1f2937;--t-muted:#374151;--t-plate:#f9fafb;
   --t-fg:#ffffff;--t-fg-2:#d1d5db;--t-line:#1f2937;--t-border:#374151;
-  --t-accent:#61a6fa;--t-on-accent:#0a0a0a;--t-ok:#34d399;--t-safe:#2dd4bf;--t-danger:#fda4a4;--t-card:#111827;
+  --t-accent:#7fb0e6;--t-on-accent:#0a0a0a;--t-ok:#34d399;--t-safe:#2dd4bf;--t-danger:#fda4a4;--t-card:#111827;
   --background:var(--t-bg);--bg:var(--t-bg);--foreground:var(--t-fg);--popover:var(--t-card);
   --surface:var(--t-surface);--surface-2:var(--t-surface-2);--muted:var(--t-surface-2);--accent:var(--t-surface-2);
   --accent-foreground:var(--t-fg);--muted-foreground:var(--t-fg-2);
@@ -144,8 +144,8 @@ body :is(.v11-section-head,.v6-section>header,.v6-close>header,.executive-decisi
 
 /* ---------- Blue band (reference: "Why Deepgrid Semi?"): shared capability ---------- */
 .v6-home .v6-section.v6-bone:not(:has(.v6-gates)){
-  --t-bg:#0863a1;--t-surface:rgb(255 255 255 / .08);--t-surface-2:rgb(255 255 255 / .1);--t-fg:#fff;--t-fg-2:#eef6ff;
-  --t-line:rgb(255 255 255 / .22);--t-border:rgb(255 255 255 / .3);--t-accent:#fff;--t-on-accent:#0863a1;
+  --t-bg:#0e4c7a;--t-surface:rgb(255 255 255 / .08);--t-surface-2:rgb(255 255 255 / .1);--t-fg:#fff;--t-fg-2:#eef6ff;
+  --t-line:rgb(255 255 255 / .22);--t-border:rgb(255 255 255 / .3);--t-accent:#fff;--t-on-accent:#0e4c7a;
   --foreground:var(--t-fg);--muted-foreground:var(--t-fg-2);--ink:var(--t-fg);--ink-2:var(--t-fg-2);--ink-3:var(--t-fg-2);
   --border:var(--t-border);--line:var(--t-line);--rule:var(--t-line);--copper:var(--t-accent);--v6-ink:var(--t-fg);--v6-muted:var(--t-fg-2);--v6-copper:var(--t-accent);
   background:var(--t-bg);color:var(--t-fg)}
@@ -208,7 +208,7 @@ body .v6-fault-chain li[data-current="true"]:not(#_) small{color:var(--dgs-blue)
 /* ---------- Round 4: contrast, kickers, monospace ---------- */
 .v6-workbench figcaption small,.v6-workbench figcaption{color:var(--t-fg-2)}
 /* The die split is a renderer stage with its own dark materials. */
-.dg-split{--t-bg:#0a0a0a;--t-fg:#fff;--t-fg-2:#d1d5db;--t-line:#1f2937;--t-border:#374151;--t-accent:#61a6fa;--ink:#fff;--ink-2:#d1d5db;--foreground:#fff;--muted-foreground:#d1d5db;--line:#1f2937;--copper:#61a6fa;--dg-ink-soft:#d1d5db;--dg-line:#374151;--dg-accent:#61a6fa;background:#0a0a0a;color:#fff;border-radius:8px}
+.dg-split{--t-bg:#0a0a0a;--t-fg:#fff;--t-fg-2:#d1d5db;--t-line:#1f2937;--t-border:#374151;--t-accent:#7fb0e6;--ink:#fff;--ink-2:#d1d5db;--foreground:#fff;--muted-foreground:#d1d5db;--line:#1f2937;--copper:#7fb0e6;--dg-ink-soft:#d1d5db;--dg-line:#374151;--dg-accent:#7fb0e6;background:#0a0a0a;color:#fff;border-radius:8px}
 .dr-qfn-body{color:#fff}.dr-qfn-body strong,.dr-qfn-body span{color:#fff}
 /* No kicker above a heading (craft floor). Labels over content stay, as plain text. */
 body [class*="kicker"]:has(+ :is(h1,h2,h3,h4)):not(#_),body .eyebrow:has(+ :is(h1,h2,h3,h4)):not(#_){display:none}
@@ -322,7 +322,7 @@ body .dgs-proof-strip strong:not(#_){white-space:nowrap;font-size:clamp(1.75rem,
 
 /* ---------- One background family (owner, 2026-10-10: "different background colours do not gel") ----------
    Measured on the live home before this: seven grounds from two families (neutral #0a0a0a / #111827, blue
-   #0f172a / #0b1220 / #232c48) plus a saturated #0863a1 band. Now: FRAME navy-black for header, hero, proof
+   #0f172a / #0b1220 / #232c48) plus a saturated #0e4c7a band. Now: FRAME navy-black for header, hero, proof
    strip, application strip and footer; one PAGE navy for every reading section, separated by hairlines, not by
    alternating colours; CARD navy for raised elements. Brand Blue is an accent (buttons, links, marks) only. */
 :root{--dgs-frame:#070b14;--dgs-page:#0b1220;--dgs-card:#121b2d;--dgs-rule:#1b2538}
@@ -340,8 +340,8 @@ body .v6-home :is(.v11-finder,.v11-system,.v6-section,.v6-section.v6-bone,.v6-se
 .executive-decision,.view-home .executive-decision{--t-bg:var(--dgs-page);background:var(--dgs-page);box-shadow:none;border-top:1px solid var(--dgs-rule)}
 /* The capability band keeps its content and loses the saturated ground: blue becomes its accent hairline. */
 body .v6-home .v6-section.v6-bone:not(:has(.v6-gates)):not(#_){
-  --t-bg:var(--dgs-page);--t-fg:#f8fafc;--t-fg-2:#cbd5e1;--t-line:var(--dgs-rule);--t-border:#2a3854;--t-accent:#61a6fa;
-  --foreground:#f8fafc;--muted-foreground:#cbd5e1;--ink:#f8fafc;--ink-2:#cbd5e1;--border:#2a3854;--line:var(--dgs-rule);--copper:#61a6fa;--v6-ink:#f8fafc;--v6-muted:#cbd5e1;--v6-copper:#61a6fa;
+  --t-bg:var(--dgs-page);--t-fg:#f8fafc;--t-fg-2:#cbd5e1;--t-line:var(--dgs-rule);--t-border:#2a3854;--t-accent:#7fb0e6;
+  --foreground:#f8fafc;--muted-foreground:#cbd5e1;--ink:#f8fafc;--ink-2:#cbd5e1;--border:#2a3854;--line:var(--dgs-rule);--copper:#7fb0e6;--v6-ink:#f8fafc;--v6-muted:#cbd5e1;--v6-copper:#7fb0e6;
   background-color:var(--dgs-page);color:#f8fafc}
 body .v6-home .v6-bone :is(.v6-foundation,.v6-proposed):not(#_){background:var(--dgs-card);border-color:#2a3854;border-top:2px solid var(--dgs-blue-dark)}
 /* Footer joins the frame family; the purple-navy #232c48 is retired. */
@@ -377,3 +377,22 @@ html:root{--diagram-ground:var(--dgs-card)}
   .cp-band::after{display:none}
 }
 body .v6-home.v11-home .v11-hero .v11-visual img:not(#_){background:var(--dgs-frame)}
+
+/* Round 6 (2026-10-11): calmer colour. Owner: the buttons look "too bright" across every section.
+   Brand Blue deepened (#0863a1 -> #0e4c7a, white text 9:1) and Light Blue softened (#61a6fa -> #7fb0e6, 8:1 on Page).
+   One filled button per view: header, hero, close and the part page's "Discuss" keep the fill; selection states and
+   secondary actions are quiet; figures are white, because blue marks only what can be acted on (One Blue Rule). */
+body .v11-filters button[aria-pressed=true]:not(#_),body .v6-tabs button[aria-pressed=true]:not(#_){background:#1a2740;border-color:var(--dgs-blue-dark);color:#fff}
+body .v6-safety .v6-primary:not(#_),body .pp-actions a.primary:not(#_){background:transparent;color:#fff;border:1.5px solid rgb(255 255 255 / .45);border-radius:6px}
+body .v6-safety .v6-primary:not(#_):hover,body .pp-actions a.primary:not(#_):hover{background:rgb(255 255 255 / .08);border-color:#fff}
+body .pt-actions a.primary:not(#_){background:transparent;color:var(--dgs-blue-dark);padding:0;text-decoration:underline;text-underline-offset:4px}
+body .pt-actions a.primary:not(#_):hover{background:transparent;color:#fff}
+body :is(.v6-proof,.v6-budget,.pp-highlights) strong:not(#_),body .st-fam-n:not(#_),body .pt-body dd:not(#_){color:var(--t-fg)}
+/* The diagnostics row's one-sentence title, and the 198-day split bar (story pack, design-plans/2026-10-11-story-arc-and-figures.md). */
+.dgs-figure-title{max-width:64ch;margin:0 0 18px;color:var(--t-fg);font-size:1.05rem}
+.dgs-split-bar{margin:18px 0 0;max-width:640px}
+.dgs-split-track{display:flex;gap:2px;height:34px;border-radius:6px;overflow:hidden}
+.dgs-split-track span{display:flex;align-items:center;gap:6px;padding:0 10px;flex-basis:0;min-width:max-content;white-space:nowrap;font-size:.8rem;color:var(--t-fg-2);background:var(--dgs-card);border:1px solid var(--t-border)}
+.dgs-split-track span:first-child{background:color-mix(in srgb,var(--dgs-blue-dark) 22%,var(--dgs-card));color:#fff}
+.dgs-split-track b{font-family:'JetBrains Mono Variable',ui-monospace,monospace;font-weight:500;color:#fff;font-variant-numeric:tabular-nums}
+.dgs-split-bar figcaption{margin-top:8px;font-size:.78rem;color:var(--t-fg-2)}
